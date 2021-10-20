@@ -83,3 +83,38 @@ class MovingAngle(Scene):
         self.play(theta_tracker.animate.increment_value(140))
         self.play(tex.animate.set_color(RED), run_time=0.5)
         self.play(theta_tracker.animate.set_value(350))
+
+class MovingGroupToDestination(Scene):
+    def construct(self):
+        group = VGroup(Dot(2* UP), Dot(UP), Dot(ORIGIN), Dot(DOWN, color=RED), Dot(2 * DOWN)).scale(1.4)
+        dest = Dot([4, 3, 0], color=YELLOW)
+        self.add(dest)
+        self.play(Transform(dest, group))
+        self.wait(0.5)
+        framebox = SurroundingRectangle(group[3], buff = .1)
+        self.play(
+            Create(framebox),
+        )
+        self.wait()
+
+class FromPoint(Scene):
+    def construct(self):
+        group = VGroup(Dot(2 * LEFT), Dot(LEFT), Dot(ORIGIN), Dot(RIGHT, color=RED), Dot(2 * RIGHT)).scale(1.4)
+        dest = Dot([4, 3, 0], color=YELLOW)
+        self.add(dest)
+        self.play(Transform(dest, group))
+        self.wait(0.5)
+
+class HorizontalGroup(Scene):
+    def construct(self):
+        group = VGroup(Dot(2 * RIGHT), Dot(RIGHT), Dot(ORIGIN), Dot(LEFT, color=RED), Dot(2 * LEFT)).scale(1.4)
+        dest = Dot([4, 3, 0], color=YELLOW)
+        self.add(dest)
+        self.play(Transform(dest, group))
+        self.wait(0.5)
+        framebox = SurroundingRectangle(group[3], buff = .1)
+        self.play(
+            Create(framebox),
+        )
+        self.wait()
+
