@@ -1,0 +1,5 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/loganj/Projects/Python_Projects/Pure_Maths/src/media/videos/main/1080p60/partial_movie_files/MovingAngle/450974505_578713845_3278847602.mp4'
+file 'file:/Users/loganj/Projects/Python_Projects/Pure_Maths/src/media/videos/main/1080p60/partial_movie_files/MovingAngle/34786186_1515667495_4186806435.mp4'
+file 'file:/Users/loganj/Projects/Python_Projects/Pure_Maths/src/media/videos/main/1080p60/partial_movie_files/MovingAngle/34786186_2536992898_3766316978.mp4'
+file 'file:/Users/loganj/Projects/Python_Projects/Pure_Maths/src/media/videos/main/1080p60/partial_movie_files/MovingAngle/34786186_198711207_2046014475.mp4'
